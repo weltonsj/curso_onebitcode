@@ -28,7 +28,12 @@ do {
       imovel.quartos = prompt(`Informe a quantidade de quartos`);
       imovel.banheiros = prompt(`Informe a quantidade de banheiros`);
       imovel.garagem = prompt(`Possui garagem Sim/Não?`);
-      const confirmarCadastro = confirm(`Confirmar o cadastro`);
+      const confirmarCadastro = confirm(`Salvar esse imóvel?
+      Tipo: ${imovel.tipo}
+      Propietario: ${imovel.prepietario}
+      Quartos: ${imovel.quartos}
+      Banheiro: ${imovel.banheiros}
+      Garagem: ${imovel.garagem}`);
       if (confirmarCadastro) {
         imoveis.push(imovel);
         alert(`Inmovél cadastrado com sucesso!`);
