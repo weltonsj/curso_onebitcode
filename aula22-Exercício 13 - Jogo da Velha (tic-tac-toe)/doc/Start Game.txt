@@ -1,0 +1,23 @@
+Start Game
+Insira os nomes dos Players
+
+Player 1 = O
+Player 2 = X
+
+
+Se o player 1 clica no quadrado 1 = O e a vez é do player 2
+Se o player 2 clica no quadrado 2 = X e a vez é do player 1
+
+
+
+Posibilidade de Vitorias
+123
+456
+789
+
+147
+258
+369
+
+159
+357

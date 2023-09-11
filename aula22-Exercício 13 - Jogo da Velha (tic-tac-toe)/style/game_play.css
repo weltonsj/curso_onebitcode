@@ -1,0 +1,142 @@
+:root {
+  /* Fonts */
+  --font-title: 'Lilita One', cursive;
+  --main-font: 'Sriracha', cursive;
+  --font-text: 'Titillium Web', sans-serif;
+  /* Colors */
+  --board-background: #E01212;
+  --font-color: #403600;
+  --choice-board: #FFD800;
+  --board-square: #E5D4AF;
+}
+
+#container_title1 {
+  display: none;
+}
+
+#container_button-home {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 4vw;
+}
+
+#container_button-home:active {
+  animation-name: click;
+  animation-duration: 0.5ms;
+  filter: drop-shadow(0px 0px 3px #000000);
+  width: 3.5vw;
+}
+
+#container-register-player {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 22vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--main-font);
+  background-color: var(--choice-board);
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+#rp-label-1,
+#rp-label-2 {
+  font-size: 24px;
+}
+
+#rp-1,
+#rp-2 {
+  height: 4vh;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+
+#button-add {
+  width: 7vw;
+  height: 5vh;
+  border: none;
+  font-family: var(--font-title);
+  color: #345EF4;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 1.15rem;
+}
+
+#button-add:active {
+  font-size: 1.1rem;
+  box-shadow: 1px 1px 3px black;  
+}
+
+#button-restart {
+  width: 7vw;
+  height: 5vh;
+  border: none;
+  font-family: var(--font-title);
+  color: #E01212;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 1.15rem;
+}
+
+#button-restart:active {
+  font-size: 1.1rem;
+  box-shadow: 1px 1px 3px black;  
+}
+
+#board {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5%;
+  background-color: var(--choice-board);
+  border: 5px solid white;
+  width: 300px;
+  padding: 5px;
+}
+
+#line1,
+#line2,
+#line3 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  position: relative;
+  width: 100px;
+  height: 75px;
+  background-color: var(--board-square);
+  border: 3px solid white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.o::after {
+  content: '\2B55';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.x::after {
+  content: '\274C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}

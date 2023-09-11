@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Fonts */
+  --font-title: 'Lilita One', cursive;
+  --main-font: 'Sriracha', cursive;
+  --font-text: 'Titillium Web', sans-serif;
+  /* Colors */
+  --board-background: #E01212;
+  --font-color: #403600;
+  --choice-board: #FFD800;
+  --board-square: #E5D4AF;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #403600;
+  font-family: var(--font-text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  background-color: var(--choice-board);
+}
+
+img {
+  width: 100%;
+}
+
+#container {
+  position: relative;
+  margin: auto;
+  width: 90vw;
+  height: 80vh;
+}
+
+#container_title1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container_title2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15vw;
+}
+
+#container_button {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.5vw;
+}
+
+#container_button:active {
+  animation-duration: 0.5ms;
+  animation-name: slidein;
+  filter: drop-shadow(0px 0px 3px #000000);
+  width: 6vw;
+}
+
+@keyframes slidein {
+  from {
+    width: 6.5vw;
+  }
+
+  to {
+    width: 6vw;
+    filter: drop-shadow(0px 0px 3px #000000);
+  }
+}
+
+#container_figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container_figcaption {
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #403600;
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--choice-board);
+}

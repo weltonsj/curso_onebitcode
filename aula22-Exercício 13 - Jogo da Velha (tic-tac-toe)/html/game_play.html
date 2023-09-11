@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha (tic-tac-toe)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Sriracha&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet">
+    <meta name="description" content="Tic-Tac-Toe, mais conhecido como jogoda velha aqui no Brasil.">
+    <link rel="stylesheet" href="../style/style_index.css">
+    <link rel="stylesheet" href="../style/game_play.css">
+  </head>
+  <body>
+    <header>
+      <p>Tic-Tac-Toe</p>
+    </header>
+    <main>
+      <div id="container">
+        <figure id="container_figure">
+          <div id="container_title1">
+            <img src="../img/p1/title1.png" alt="jogo-da-velha">
+          </div>
+          <!-- Parte para a ser editado de acordo com a página -->
+          <!-- =============================================== -->
+          <div id="container_button-home">
+            <a href="../index.html"><img src="../img/index/button-home.png" alt="botão-play"></a>
+          </div>
+          <!-- Registro de Jogadores -->
+          <div id="container-register-player">
+            <label for="rp-1" id="rp-label-1">Jogador 1</label>
+            <input type="text" id="rp-1" placeholder="Insira seu nome">
+            <p id="player-winner">...</p>
+            <button id="button-add">Adicionar</button>
+            <button id="button-restart">Recomeçar</button>
+          </div>
+          <!-- Tabuleiro do Jogo -->
+          <section id="board" class="borad1">
+            <div id="line1">
+              <div class="square sq1">1</div>
+              <div class="square sq2">2</div>
+              <div class="square sq3">3</div>
+            </div>
+            <div id="line2">
+              <div class="square sq4">4</div>
+              <div class="square sq5">5</div>
+              <div class="square sq6">6</div>
+            </div>
+            <div id="line3">
+              <div class="square sq7">7</div>
+              <div class="square sq8">8</div>
+              <div class="square sq9">9</div>
+            </div>
+          </section>
+          <!-- =============================================== -->
+          <img src="../img/p2/background_image.png" alt="">
+          <figcaption id="container_figcaption">
+            <a
+              href="https://br.freepik.com/vetores-gratis/parque-infantil-vazio-com-escorregadores_12321391.htm#query=parque%20infantil&position=1&from_view=keyword&track=ais">Imagem
+              de brgfx</a> no Freepik
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright © Icoutech Support Technology Reserved Right.</p>
+    </footer>
+    <script src="../js/graphicpart.js"></script>
+    <script src="../js/checkwinner.js"></script>
+  </body>
+</html>
