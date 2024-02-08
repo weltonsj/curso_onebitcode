@@ -23,21 +23,26 @@ body {
   gap: 40px;
 }
 
-header > h1 {
-  /* border: 1px solid white; */
+header {
+  display: flex;
   padding: 30px 30px 0px 50px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+img {
+  flex-basis: 280px;
 }
 
 main {
   display: flex;
-  /* border: 1px solid white; */
   flex: 1;
   gap: 30px;
   padding: 0 30px;
 }
 
 footer>p {
-  /* border: 1px solid white; */
   padding: 20px;
   text-align: center;
   font-size: 0.85em;
@@ -46,7 +51,6 @@ footer>p {
 .container1 {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid white; */
   flex-basis: 20rem;
 }
 
@@ -81,14 +85,12 @@ footer>p {
 }
 
 .container2 {
-  /* border: 1px solid white; */
   flex: auto;
   display: flex;
   flex-direction: column;
 }
 
 #history-container {
-  /* border: 1px solid white; */
   flex: 1;
   overflow-y: auto;
   max-height: 500px;
@@ -99,7 +101,6 @@ footer>p {
   display: flex;
   border-bottom: .5px solid #ffffff5b;
   gap: 20px;
-  /* border: 1px solid white; */
   align-items: center;
   margin-bottom: 20px;
 }
@@ -121,7 +122,6 @@ span {
   background-color: var(--background-color-2);
   border-radius: 10px;
   margin-bottom: 30px;
-  /* border: 1px solid white; */
 }
 
 button {
@@ -157,6 +157,14 @@ button:active, .btn-edit:active, .btn-delete:active {
 }
 
 @media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  img {
+    flex-basis: auto;
+  }
+
   main {
     flex-direction: column;
   }
